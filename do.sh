@@ -1,17 +1,16 @@
 #!/usr/bin/env sh
-
-IMAGE_NAME="registry.8gears.com/hello-world"
+# Do - The Simplest Build Tool on Earth. See https://github.com/8gears/do
 
 function build() {
-	echo "I am ${FUNCNAME[ 0 ]}ing"
+	echo "I am ${FUNCNAME[0]}ing"
 }
 
 function test() {
-	echo "I am ${FUNCNAME[ 0 ]}ing"
+	echo "I am ${FUNCNAME[0]}ing"
 }
 
 function deploy() {
-	echo "I am ${FUNCNAME[ 0 ]}ing"
+	echo "I am ${FUNCNAME[0]}ing"
 }
 
 function all() {

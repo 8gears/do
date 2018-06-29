@@ -19,16 +19,17 @@ However there are some use cases where major Build Tools aren't the best fit. He
 ## Concept
 
 The concept of **Do** is simple to explain. Functions are Tasks and Tasks can be combined to new Tasks. Tasks also accept parameters or environment variables.
-It is important to be disciplined with **Do** and not add too much complexity, which is common in the case of shell scripts. Otherwise it would blur the simple syntax of **Do** and make it harder for others to understand the build file. In doubt [KISS](https://en.wikipedia.org/wiki/KISS_principle)
+It is important to be disciplined with **Do** and not add too much complexity, which is common in the case of shell scripts. Otherwise it would blur the simple syntax of **Do** and make it harder for others to understand the build file. In doubt [KISS](https://en.wikipedia.org/wiki/KISS_principle).
 
 ## Usage
 
 ```sh
 $ ./do.sh build
-> ...
+I am building
+...
 ```
 
-If no argument is provided **Do** prints out a help message with all the possible tasks.
+If no argument is provided **Do** prints out a help message with all the available tasks.
 
 ```sh
 $ ./do.sh
