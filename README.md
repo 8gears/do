@@ -25,7 +25,7 @@ If you have some other use cases where **Do** can shine, open an issue or submit
 
 ## Installation
 
-The simplest way to use `Do` is to copy and paste the `do.sh` code into your project and extend it as needed.
+The simplest way to use `Do` is to copy and paste the [`do.sh`](do.sh) code into your project and extend it as needed.
 
 ## Usage
 
