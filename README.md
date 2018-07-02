@@ -78,9 +78,9 @@ function all() {
 let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"
 ```
 
-The line `let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"` prints out a usage example listing all functions in case no argument was provided.
+In case no argument was provided the line `let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"` will prints out a help message with all the available tasks in this build file.
 
-It is important to be disciplined with **Do** and not add too much complexity, which is common in the case of shell scripts. Otherwise it would blur the simple syntax of **Do** and make it harder for others to understand the build file. In doubt [KISS](https://en.wikipedia.org/wiki/KISS_principle).
+It is important to be disciplined with **Do** and avoid adding too much complexity, which is common in the case of shell scripts. Otherwise it would blur the simple syntax of **Do** and make it harder for others to understand the build file. In doubt [KISS](https://en.wikipedia.org/wiki/KISS_principle).
 
 ## How To Contribute
 
