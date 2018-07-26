@@ -12,9 +12,9 @@
 
 ## Why Do
 
-There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile and expressive then **Do**. Usually you should be fine with one of the major Build Tools. The second purpose of **Do** is to tame the uncontrolled growth and complexity of Shell build scripts. By providing consistent interfaces, documentation, reference and best practices on how to use and build **Do** scripts. It should be possible to make **Do** scripts recognizable and understandable even if they are customized.
+There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile and expressive then **Do**. Usually you should be fine with a well known build tool. In some cases however the major build tools aren't the best fit or need some sort of an extension. Another purpose of **Do** is to tame the uncontrolled growth and complexity of Shell build scripts. By providing consistent interfaces, documentation, reference and best practices on how to use and build **Do** scripts. It should be possible to make **Do** scripts recognizable and understandable even if they are customized.
 
-In some use cases the major Build Tools aren't the best fit or need some sort of an extension. Here are some use cases where **Do** can shine:
+Here are some use cases where **Do** can shine:
 
 -  You want a Build Tool that interact nicely with the Shell. Use **Do** to apply a consistent workflow and syntax.
 -  Golangs `go` already provides some build tool like functionality and most of the major build tools are too much to justify the overhead. A combination of a few Shell commands will **Do** it.

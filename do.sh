@@ -1,7 +1,5 @@
-#!/usr/bin/env sh
+#!/usr/bin/env sh -eu
 # Do - The Simplest Build Tool on Earth. See https://github.com/8gears/do
-
-set -e
 
 function build() {
 	echo "I am ${FUNCNAME[0]}ing"
