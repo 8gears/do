@@ -54,28 +54,34 @@ The concept of **Do** is simple to explain. Functions are Tasks and Tasks can be
 It is possible to define as many tasks as needed. The **Do** template for defines `build, test, deploy, all` for your convenience.
 
 ```sh
-#!/usr/bin/env sh
-# Do - The Simplest Build Tool on Earth. See https://github.com/8gears/do
+#!/usr/bin/env sh -eu
+# Do - The Simplest Build Tool on Earth.
+# Documentation and examples see https://github.com/8gears/do
 
 function build() {
-    echo "I am ${FUNCNAME[0]}ing"
+	echo "I am ${FUNCNAME[0]}ing"
 }
 
 function test() {
-    echo "I am ${FUNCNAME[0]}ing"
+	echo "I am ${FUNCNAME[0]}ing"
 }
 
 function deploy() {
-    echo "I am ${FUNCNAME[0]}ing"
+	echo "I am ${FUNCNAME[0]}ing"
 }
 
 function all() {
-    build && test && deploy
+	build && test && deploy
 }
 
-"$@"
+function _hidden() {
+	echo "I am a hidden task and won't appear in the usage desciption because I start with an _ (underscore). If you know me you can still call me directly"
+}
 
-let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"
+"$@" # <- execute the task
+
+let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | grep ^[^_] | paste -sd '|' -))"
+
 ```
 
 In case no argument was provided the line `let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"` will prints out a help message with all the available tasks in this build file.
