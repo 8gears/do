@@ -104,3 +104,4 @@ There aren't any public projects yet, If you have one open a PR to add your proj
 -  [Bake](https://github.com/kyleburton/bake) a pure bash project automation tool
 -  [Taskfile](http://taskfile.org/#/usage) a task runner / simpler Make alternative written in Go
 -  [Robo](https://github.com/tj/robo) Simple Go / YAML-based task runner for the team.
+-  [godo](https://github.com/go-godo/godo) godo is a task runner and file watcher for golang in the spirit of rake, gulp. It has kind of same name.
