@@ -1,3 +1,4 @@
+
 # Do - The Simplest Build Tool on Earth
 
 **Do** is a Build Tool and Build File in one single self executable Shell script.
@@ -12,12 +13,12 @@
 
 ## Why Do
 
-There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile and expressive then **Do**. Usually you should be fine with a well known build tool. In some cases however the major build tools aren't the best fit or need some sort of an extension. Another purpose of **Do** is to tame the uncontrolled growth and complexity of Shell build scripts. By providing consistent interfaces, documentation, reference and best practices on how to use and build **Do** scripts. It should be possible to make **Do** scripts recognizable and understandable even if they are customized.
+There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile and expressive then **Do**. Usually you should be fine with a well-known build tool. In some cases however the major build tools aren't the best fit or need some sort of extension. Another purpose of **Do** is to tame the uncontrolled growth and complexity of Shell build scripts. By providing consistent interfaces, documentation, reference and best practices on how to use and build **Do** scripts. It should be possible to make **Do** scripts recognizable and understandable even if they are customized.
 
 Here are some use cases where **Do** can shine:
 
 -  You want a Build Tool that interact nicely with the Shell. Use **Do** to apply a consistent workflow and syntax.
--  Golangs `go` already provides some build tool like functionality and most of the major build tools are too much to justify the overhead. A combination of a few Shell commands will **Do** it.
+-  Golangs `go` already provides some build tool like functionality and most of the major build tools are too much to justify the overhead. A combination of a few commands will **Do** it.
 -  Building or Deploying Container Images can get out of hand quickly, **Do** can help by providing a consistent and understandable flow to build, ship and run images.
 -  Declarative CI/CD Build files like GitLabCI or TravisCI can become quite complex and are hard to test locally. **Do** can help here by wrapping those commands in **Do** functions and make them locally testable. At the same time it will reduce the Build files making them easy understandable.
 
@@ -29,7 +30,7 @@ The simplest way to use `Do` is to copy and paste the [`do.sh`](do.sh) code into
 
 ## Usage
 
-**Do** expects one argument on what to do. If more then one argument is provided they are passed on to the task.
+**Do** expects one argument on what to do, If more than one argument is provided, then the following arguments are all passed on to the task.
 
 ```sh
 $ ./do.sh build
@@ -84,9 +85,9 @@ let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | grep ^[^_] | paste -s
 
 ```
 
-In case no argument was provided the line `let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"` will prints out a help message with all the available tasks in this build file.
+In case no argument was provided the line `let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"` will print out a help message with all the available tasks in this build file.
 
-It is important to be disciplined with **Do** and avoid adding too much complexity, which is common in the case of shell scripts. Otherwise it would blur the simple syntax of **Do** and make it harder for others to understand the build file. In doubt [KISS](https://en.wikipedia.org/wiki/KISS_principle).
+It is important to be disciplined with **Do** and avoid adding too much complexity, which is common in the case of shell scripts. Otherwise, it would blur the simple syntax of **Do** and make it harder for others to understand the build file. In doubt [KISS](https://en.wikipedia.org/wiki/KISS_principle).
 
 ## Convenience
 For your convenience you can create an alias in your `~/.zsrc|.bashrc` file
@@ -98,7 +99,7 @@ From now on you can type `>doo` instead of `./do.sh` The second `o`is there too 
 ## How To Contribute
 
 You can contribute by improving `do.sh` or by providing examples on how to use **Do** in an elegant or creative way.
-Follow the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle). Don't add complexity. Don't make it bigger then needed.
+Follow the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle). Don't add complexity. Don't make it bigger than needed.
 
 Create an issue describing the problem you a trying to solve to start a discussion. Do the changes and open a merge request.
 
