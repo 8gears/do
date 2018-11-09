@@ -88,6 +88,13 @@ In case no argument was provided the line `let $# || echo "Usage:\n\t./do.sh ($(
 
 It is important to be disciplined with **Do** and avoid adding too much complexity, which is common in the case of shell scripts. Otherwise it would blur the simple syntax of **Do** and make it harder for others to understand the build file. In doubt [KISS](https://en.wikipedia.org/wiki/KISS_principle).
 
+## Convenience
+For your convenience you can create an alias in your `~/.zsrc|.bashrc` file
+```sh
+alias doo='./do.sh'
+```
+From now on you can type `>doo` instead of `./do.sh` The second `o`is there too not get confused with the reserved looping construct word`do`.
+
 ## How To Contribute
 
 You can contribute by improving `do.sh` or by providing examples on how to use **Do** in an elegant or creative way.
