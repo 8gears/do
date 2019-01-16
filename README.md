@@ -1,7 +1,7 @@
 
 # Do - The Simplest Build Tool on Earth
 
-**Do** is a **build tool** and a **build file** in the same self-executing shell script.
+**Do** [dosh] is a **build tool** and a **build file** in the same self-executing shell script.
 
 -  No installation
 -  No libraries
