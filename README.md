@@ -13,7 +13,8 @@
 
 ## Why Do
 
-There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile and expressive then **Do**. Usually you should be fine with a well-known build tool. In some cases however the major build tools aren't the best fit or need some sort of extension. Another purpose of **Do** is to tame the uncontrolled growth and complexity of Shell build scripts. By providing consistent interfaces, documentation, reference and best practices on how to use and build **Do** scripts. It should be possible to make **Do** scripts recognizable and understandable even if they are customized.
+There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile and expressive than Do. If you are already using a well-known build tool keep on using it. Do is for use cases where the major build tools aren't the best fit. The second purpose of Do is to tame the complexity of usual Shell build scripts. By providing consistent interfaces, documentation, reference and best practices on how to use and write Do scripts. Do scripts should be recognizable and understandable even if they are customized.
+
 
 Here are some use cases where **Do** can shine:
 
