@@ -32,7 +32,7 @@ The simplest way to use `Do` is to copy and paste the content of the [`do.sh`](d
 
 ## Usage
 
-**Do** expects one argument on what to do, If more than one argument is provided, then the following arguments are all passed on to the task. See [do.arguments.sh](blob/master/examples/do.arguments.sh) in examples directory.
+**Do** expects one argument on what to do, If more than one argument is provided, then the following arguments are all passed on to the task. See [do.arguments.sh](examples/do.arguments.sh) in examples directory.
 
 ```sh
 $ ./do.sh build
@@ -105,7 +105,7 @@ From now on you can type `>doo` instead of `./do.sh` The second `o`is there too 
 
 ## Examples
 
-The [examples](tree/master/examples) directory contains a few different usage examples for `do`.
+The [examples](examples) directory contains a few different usage examples for `do`.
 
 ## How To Contribute
 
