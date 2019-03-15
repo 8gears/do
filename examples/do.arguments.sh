@@ -1,25 +1,16 @@
 #!/usr/bin/env sh
-# Do - The Simplest Build Tool on Earth. See https://github.com/8gears/do
+# Do - The Simplest Build Tool on Earth.
+# Documentation and examples see https://github.com/8gears/do
 
-function build() {
-	echo "I am ${FUNCNAME[0]}ing"
-}
+set -e -u # -e "Automatic exit from bash shell script on error"  -u "Treat unset variables and parameters as errors"
 
 #
-# >/do.arguments.sh test a b c
-# I am testing with Arg 1=a Arg 2=b and Arg 3=c
-function test() {
-	echo "I am ${FUNCNAME[0]}ing with Arg 1=$1 Arg 2=$2 and Arg 3=$3"
+# >/do.arguments.sh show a b c
+# I am showing with Arg 1=a Arg 2=b and Arg 3=c
+show() {
+   echo "I am ${FUNCNAME[0]}ing with Arg 1=$1 Arg 2=$2 and Arg 3=$3"
 }
 
-function deploy() {
-	echo "I am ${FUNCNAME[0]}ing"
-}
+"$@" # <- execute the task
 
-function all() {
-	build && test && deploy
-}
-
-"$@"
-
-let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"
+[ "$#" -gt 0 ] || printf "Usage:\n\t./do.sh %s\n" "($(compgen -A function | grep '^[^_]' | paste -sd '|' -))"

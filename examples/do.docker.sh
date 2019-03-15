@@ -1,24 +1,28 @@
 #!/usr/bin/env sh
+# Do - The Simplest Build Tool on Earth.
+# Documentation and examples see https://github.com/8gears/do
+
+set -e -u # -e "Automatic exit from bash shell script on error"  -u "Treat unset variables and parameters as errors"
 
 IMAGE_NAME="registry.8gears.com/hello-world"
-TAG="${CI_COMMIT_TAG:-latest}"  
+TAG="${CI_COMMIT_TAG:-latest}"
 
-function build() {
-	docker build -t ${IMAGE_NAME}:TAG .
+build() {
+   docker build -t ${IMAGE_NAME}:TAG .
 }
 
-function test() {
-	docker build -t ${IMAGE_NAME}:candidate .
+test() {
+   docker build -t ${IMAGE_NAME}:candidate .
 }
 
-function deploy() {
-	docker push ${IMAGE_NAME}:${TAG}
+deploy() {
+   docker push ${IMAGE_NAME}:${TAG}
 }
 
-function all() {
-	build && test && deploy
+all() {
+   build && test && deploy
 }
 
-"$@"
+"$@" # <- execute the task
 
-let $# || echo "Usage:\n\t./do.sh ($(compgen -A function | paste -sd '|' -))"
+[ "$#" -gt 0 ] || printf "Usage:\n\t./do.sh %s\n" "($(compgen -A function | grep '^[^_]' | paste -sd '|' -))"
