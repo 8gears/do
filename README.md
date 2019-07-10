@@ -16,6 +16,8 @@ There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automat
 
 > Do scripts should be recognizable and understandable even if they are customized.
 
+### Typical Use Cases 
+
 Some use cases where **Do** can shine are:
 
 - A Build Tool that interact nicely with the Shell. Use **Do** to apply a consistent workflow and syntax.
