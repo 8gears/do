@@ -6,9 +6,8 @@
 - No installation
 - No libraries
 - No dependencies
-- Easy to use
-- Easy to understand
-- Simple to extend
+- Easy to use and understand
+- Easy and simple to extend
 - Runs on anything with a Shell
 
 ## Why Do
