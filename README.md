@@ -12,7 +12,7 @@
 
 ## Why Do
 
-There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile or expressive than Do. If you are already using a well-known build tool, then keep on using it. Do is for use cases where the major build tools aren't the best fit. The second purpose of Do is to tame the complexity of usual Shell build scripts. Do wants to provide a consistent reference, interface, documentation and best practices on how to use and write build scripts. 
+There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile or expressive than Do.sh. If you are already using a well-known build tool, then keep on using it. Do is for use cases where the major build tools aren't the best fit. The second purpose of Do is to tame the complexity of usual Shell build scripts. Do provides a consistent reference, interface, documentation and best practices on how to write build scripts. 
 
 > Do scripts should be recognizable and understandable even if they are customized.
 
