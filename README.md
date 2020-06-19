@@ -20,7 +20,7 @@ There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automat
 
 Some use cases where **Do** can shine are:
 
-- A Build Tool that interact nicely with the Shell. Use **Do** to apply a consistent workflow and syntax.
+- A Build Tool or CI/CD pipeline that interact nicely with the Shell. Use **Do** to apply a consistent workflow and syntax.
 - Golang's `go` already provides some build tool like functionality and most of the major build tools are too much to justify the overhead. A combination of a few commands will **Do** it.
 - Building or Deploying Container Images can get out of hand quickly, **Do** can help by providing a consistent and understandable flow to build, ship and run images.
 - Declarative CI/CD Build files like GitLabCI or TravisCI can become quite complex and are hard to test locally. **Do** can help here by wrapping those commands in **Do** tasks and make them locally testable. At the same time it will reduce the Build files making them easy understandable.
