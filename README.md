@@ -3,14 +3,15 @@
 
 **Do** or **do.sh** [dosh] is a **build tool** and a **build file** in one and the same self-executable shell script 🪄. (Read that again)
 
-- No installation
-- No libraries
-- No dependencies
-- Easy to use and understand
-- Simple to extend
-- Runs on anything with a Shell
-
-## Why Do
+- ✅ No installation (Just Copy & Paste the starter script)
+- ✅ No libraries
+- ✅ No dependencies
+- ✅ Easy to use and understand
+- ✅ Simple to extend
+- ✅ Runs on anything with a Shell
+- 🔴 Is not intended to replace a full blown build tool
+ 
+## Why Do.sh
 
 There are [many build-tools](https://en.wikipedia.org/wiki/List_of_build_automation_software) that are more powerful, versatile or expressive than Do.sh. If you are already using a well-known build tool, then keep on using it. Do is for use cases where the major build tools aren't the best fit. The second purpose of Do is to tame the complexity of usual Shell build scripts. Do provides a consistent reference, interface, documentation and best practices on how to write build scripts. 
 
